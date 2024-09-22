@@ -1,2 +1,3 @@
+//O arquivo settings.gradle é responsável por definir algumas configurações básicas de um projeto Gradle, como o nome do projeto e os módulos que ele contém. 
 rootProject.name = 'application'
 include('app')

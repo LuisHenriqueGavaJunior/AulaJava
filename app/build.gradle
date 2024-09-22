@@ -9,10 +9,18 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.3.3'
-	implementation 'mysql:mysql-connector-java:8.0.33'
-	implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.2'
-	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1'
+    implementation 'org.springframework.boot:spring-boot-starter-web' //-Spring Boot Web para criar uma aplicação web.
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper' //Suporte a JSP com Tomcat embutido.
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.3.3' //Spring Data JPA para integração com banco de dados.
+	implementation 'mysql:mysql-connector-java:8.0.33' //Conector MySQL para comunicação com o banco de dados MySQL.
+	implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.2' //as dependências relacionadas ao Servlet permitem trabalhar com JSP e JSTL
+	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1' //JSTL para tags JSP.
 }
+
+// O arquivo build.gradle define as configurações básicas de um projeto Spring Boot usando Gradle:
+
+// Plugins: Inclui o suporte para Java, Spring Boot e gerenciamento de dependências.
+
+// Repositórios: Usa o repositório Maven Central para baixar dependências.
+
+// Dependências

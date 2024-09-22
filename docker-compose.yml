@@ -1,3 +1,4 @@
+#define uma configuração para iniciar e gerenciar conteiners, no nosso projeto definimos apenas um contêiner do MySQL usando o Docker Compose.
 version: '3.1'
 
 services:

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib uri="jakarta.tags.core" prefix="c" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %> <!-- Declarações iniciais para a página JSP, como o uso da linguagem Java e o tipo de conteúdo HTML com codificação UTF-8. -->
+<%@ taglib uri="jakarta.tags.core" prefix="c" %> <!-- Importa a biblioteca de tags JSP (JSTL) para usar expressões como loops (<c:forEach>). -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,3 +23,9 @@
     </table>
 </body>
 </html>
+
+<!-- Cabeçalhos (<th>): Define as colunas "id" e "nome" da tabela.
+    Iteração com JSTL (<c:forEach>): A tag JSTL (<c:forEach>) percorre a lista de gêneros, armazenada na variável ${generos}.
+    Para cada gênero na lista, cria-se uma linha na tabela (<tr>), onde:
+    ${g.id}: Exibe o ID do gênero.
+    ${g.nome}: Exibe o nome do gênero. -->
