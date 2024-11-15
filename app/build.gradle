@@ -1,20 +1,41 @@
 plugins {
-	id 'java'
-	id 'org.springframework.boot' version '3.0.6'
-	id 'io.spring.dependency-management' version '1.1.0'
+    // Aplica o plugin para projetos Java (compilação, testes, etc.).
+	id 'java' 
+	
+    // Aplica o plugin do Spring Boot para facilitar a configuração e execução do aplicativo Spring Boot.
+	id 'org.springframework.boot' version '3.0.6' 
+	
+    // Aplica o plugin para gerenciar versões de dependências, evitando conflitos e mantendo compatibilidade.
+	id 'io.spring.dependency-management' version '1.1.0' 
 }
 
 repositories {
+    // Define o repositório Maven Central como fonte para baixar as dependências do projeto.
 	mavenCentral()
 }
 
 dependencies {
-	compileOnly	'org.projectlombok:lombok:1.18.34'
+    // Dependência usada apenas na compilação. Lombok reduz código boilerplate como getters e setters.
+	compileOnly 'org.projectlombok:lombok:1.18.34' 
+	
+    // Processador de anotações para Lombok, necessário para gerar código em tempo de compilação.
 	annotationProcessor 'org.projectlombok:lombok:1.18.34'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
+	
+    // Dependência principal para criar aplicações web com Spring Boot (inclui servidor embutido e configuração simplificada).
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	
+    // Biblioteca para suporte a JSP (Java Server Pages) com Tomcat como servidor de servlet embutido.
 	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	
+    // Starter do Spring Boot para usar JPA (Java Persistence API) e manipulação de dados em banco de dados. 
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.3.3'
+	
+    // Conector JDBC para integração com banco de dados MySQL.
 	implementation 'mysql:mysql-connector-java:8.0.33'
+	
+    // Biblioteca para suporte a tags JSP padrão (JSTL - JavaServer Pages Standard Tag Library).
 	implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.2'
+	
+    // Implementação de JSTL fornecida pelo GlassFish (necessária para executar JSTL no Tomcat).
 	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1'
 }
