@@ -1,5 +1,7 @@
 package application.model;
 
+import java.util.Set;
+
 import jakarta.persistence.Entity; // Importa a anotação Entity, que marca a classe como uma entidade JPA
 import jakarta.persistence.Id; // Importa a anotação Id, usada para marcar o campo como chave primária
 import jakarta.persistence.Table; // Importa a anotação Table, que define o nome da tabela no banco de dados
